@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chess Game</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <input type="text" placeholder="Enter the position" required id="position">
-    <br> <br>
-    <button type="submit" onclick="play()">Go!</button>
-
-</body>
-
+  <body>
+    <div id="chess-board">
+      <div class="inner">
+        <h1>Chess Game</h1>
+        <input
+          type="text"
+          placeholder="Enter the position of Queen-1"
+          required
+          id="position-1"
+        />
+        <br />
+        <br />
+        <input
+          type="text"
+          placeholder="Enter the position of Queen-2"
+          required
+          id="position-2"
+        />
+        <br />
+        <br />
+        <button type="submit" class="button" onclick="play()">Go!</button>
+        <button type="submit" class="button" onclick="refresh()">
+          Refresh
+        </button>
+        <p class="p-tag" id="message"></p>
+        <p class="p-tag" id="message-1"></p>
+      </div>
+    </div>
+  </body>
 </html>
 
 <script src="./app.js"></script>
